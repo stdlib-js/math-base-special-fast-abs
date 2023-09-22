@@ -63,7 +63,7 @@ The [absolute value][absolute-value] is defined as
 ## Usage
 
 ```javascript
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@deno/mod.js';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@v0.1.0-deno/mod.js';
 ```
 
 #### abs( x )
@@ -114,7 +114,7 @@ v = abs( NaN );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@deno/mod.js';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@v0.1.0-deno/mod.js';
 
 var rand;
 var i;
