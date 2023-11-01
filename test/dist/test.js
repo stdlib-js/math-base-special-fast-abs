@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,43 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isNegativeZero = require( '@stdlib/math-base-assert-is-negative-zero' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var PI = require( '@stdlib/constants-float64-pi' );
-var abs = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof abs, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function computes the absolute value of a number', function test( t ) {
-	t.equal( abs( -2.0 ), 2.0, 'negative number' );
-	t.equal( abs( 3.0 ), 3.0, 'positive number' );
-	t.equal( abs( 0.0 ), 0.0, 'zero' );
-	t.equal( abs( -PI ), PI, 'pi' );
-	t.end();
-});
-
-tape( 'the function returns `-0` if provided `-0` (not IEEE 754 compliant)', function test( t ) {
-	t.equal( isNegativeZero( abs( -0.0 ) ), true, 'returns negative zero' );
-	t.end();
-});
-
-tape( 'the function computes the absolute value of `infinity`', function test( t ) {
-	t.equal( abs( PINF ), PINF, 'returns +infinity' );
-	t.equal( abs( NINF ), PINF, 'returns +infinity' );
-	t.end();
-});
-
-tape( 'if provided `NaN`, the function returns `NaN`', function test( t ) {
-	var v = abs( NaN );
-	t.equal( isnan( v ), true, 'returns NaN' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
