@@ -63,7 +63,7 @@ The [absolute value][absolute-value] is defined as
 ## Usage
 
 ```javascript
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@esm/index.mjs';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@v0.3.1-esm/index.mjs';
 ```
 
 #### abs( x )
@@ -119,7 +119,7 @@ v = abs( NaN );
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@esm/index.mjs';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@v0.3.1-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
