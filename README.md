@@ -63,7 +63,7 @@ The [absolute value][absolute-value] is defined as
 ## Usage
 
 ```javascript
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@deno/mod.js';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@v0.3.1-deno/mod.js';
 ```
 
 #### abs( x )
@@ -114,7 +114,7 @@ v = abs( NaN );
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@deno/mod.js';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-fast-abs@v0.3.1-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
